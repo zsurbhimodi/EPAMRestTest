@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" time-out="300" name="Failed suite [Time test Suite]" guice-stage="DEVELOPMENT">
+  <test time-out="300" name="Timeout Test(failed)">
+    <classes>
+      <class name="com.restapi.testng.Timeout">
+        <methods>
+          <include name="timeTestOne"/>
+          <include name="timeTestTwo"/>
+        </methods>
+      </class> <!-- com.restapi.testng.Timeout -->
+    </classes>
+  </test> <!-- Timeout Test(failed) -->
+</suite> <!-- Failed suite [Time test Suite] -->

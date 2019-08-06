@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "html_attributions": {
+      "type": "array",
+      "items": {}
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "formatted_address": {
+            "type": "string"
+          },
+          "geometry": {
+            "type": "object",
+            "properties": {
+              "location": {
+                "type": "object",
+                "properties": {
+                  "lat": {
+                    "type": "number"
+                  },
+                  "lng": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "lat",
+                  "lng"
+                ]
+              },
+              "viewport": {
+                "type": "object",
+                "properties": {
+                  "northeast": {
+                    "type": "object",
+                    "properties": {
+                      "lat": {
+                        "type": "number"
+                      },
+                      "lng": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "lat",
+                      "lng"
+                    ]
+                  },
+                  "southwest": {
+                    "type": "object",
+                    "properties": {
+                      "lat": {
+                        "type": "number"
+                      },
+                      "lng": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "lat",
+                      "lng"
+                    ]
+                  }
+                },
+                "required": [
+                  "northeast",
+                  "southwest"
+                ]
+              }
+            },
+            "required": [
+              "location",
+              "viewport"
+            ]
+          },
+          "icon": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "photos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "height": {
+                  "type": "integer"
+                },
+                "html_attributions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "photo_reference": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "height",
+                "html_attributions",
+                "photo_reference",
+                "width"
+              ]
+            }
+          },
+          "place_id": {
+            "type": "string"
+          },
+          "rating": {
+            "type": "number"
+          },
+          "reference": {
+            "type": "string"
+          },
+          "types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "formatted_address",
+          "geometry",
+          "icon",
+          "id",
+          "name",
+          "photos",
+          "place_id",
+          "rating",
+          "reference",
+          "types"
+        ]
+      }
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "html_attributions",
+    "results",
+    "status"
+  ]
+}

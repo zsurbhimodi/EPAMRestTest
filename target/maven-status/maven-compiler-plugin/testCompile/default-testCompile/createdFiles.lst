@@ -1,0 +1,6 @@
+com\restapi\realTime\TwitterAPI.class
+com\restapi\testing\PostAPIWithDataProvider.class
+com\restapi\realTime\JiraAPI.class
+com\restapi\testing\PostAPI.class
+com\restapi\Data\PayLoadPOST.class
+com\restapi\testing\GetAPI.class

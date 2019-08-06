@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Time test Suite" time-out="300" verbose="1" >
+  <test name="Timeout Test" >
+    <classes>
+      <class name="com.restapi.testng.Timeout" />
+    </classes>
+  </test>
+</suite>
